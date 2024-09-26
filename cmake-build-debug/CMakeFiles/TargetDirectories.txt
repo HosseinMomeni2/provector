@@ -1,0 +1,3 @@
+D:/proj/provector/cmake-build-debug/CMakeFiles/provector.dir
+D:/proj/provector/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/proj/provector/cmake-build-debug/CMakeFiles/rebuild_cache.dir
