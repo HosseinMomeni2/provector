@@ -268,6 +268,25 @@ public :
         }
     }
 
+    T operator[](int n)
+    {
+        n = n % this->size;
+        return this->array[this->first + n];
+    }
+
+    void operator=(provector<T> pv)
+    {
+        T* temp = new T[pv.private_size];
+        for(int i=pv.first; i<pv.first + pv.size; i++)
+            temp[i] = pv.array[i];
+        delete [] this->array;
+        this->array = temp;
+        this->first = pv.first;
+        this->size = pv.size;
+        this->private_size = pv.private_size;
+        this->mode = pv.mode;
+    }
+
     int get_size()
     {
         return this->size;
